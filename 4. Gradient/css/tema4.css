@@ -1,0 +1,95 @@
+html {
+    background: linear-gradient( rgba(0, 4, 0, 0.3), rgba(0, 4, 0, 0.3) ), url(../img/mountains.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.layer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 55%;
+    height: 50%;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px #888888;
+    background: linear-gradient( rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) ), no-repeat center center fixed;
+}
+
+.mirror {
+    float: left;
+    width: 60%;
+    padding: 13px;
+    line-height: 35px;
+    color: #7d878a;
+}
+
+.mirror > h1 {
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 900;
+    font-size: 250%;
+}
+
+.mirror p {
+    margin: 0;
+}
+
+.person {
+    display: table;
+    float: right;
+    width: 30%;
+    height: 100%;
+    background: white;
+}
+
+.centered {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.centered img {
+    border-radius: 50%;
+    margin-top: 30px;
+}
+.centered p:not(span) {
+    color: #7d878a;
+}
+.centered a {
+   text-decoration: none;
+}
+
+input {
+    padding: 5px;
+    width: 80%;
+    border: 1px solid rgba(0,0,0, .6);
+    border-radius: 5px;
+    background: #EFEEEE;
+    font-size: 1.3em;
+}
+
+input[type="password"]:nth-child(2) {
+    margin-top: 20px;
+}
+
+input::-webkit-input-placeholder {
+    color: #e5dfd8;
+}
+input::-moz-placeholder {
+    color: #e5dfd8;
+}
+input:-moz-placeholder {   /* Older versions of Firefox */
+    color: #e5dfd8;
+}
+input:-ms-input-placeholder {
+    color: #e5dfd8;
+}
+
+.button {
+    margin-top: 25px;
+    margin-bottom: 40px;
+    padding: 5px;
+    width: 86%;
+    background: #092b55;
+    color: #fff;
+}

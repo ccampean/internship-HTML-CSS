@@ -1,0 +1,85 @@
+h1 {
+    font: 24px black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+div {
+
+}
+
+img {
+    width: 200px;
+    height: 150px;
+    float: left;
+    padding-right: 20px;
+}
+
+p {
+    background: green;
+    overflow: hidden;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+}
+footer a {
+    color:#009933;
+
+}
+
+footer a:hover {
+    color:#990000;
+}
+
+
+/* versiunea Razvan Matei
+h1 {
+  font: 24px black;
+  text-align:center;
+  margin-bottom: 30px;
+}
+div {
+  position: relative;
+  padding: 0 0 0 110px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+}
+
+
+footer a {
+  color:#009933;
+}
+footer a:hover {
+  color:#990000;
+}
+
+*/
+
+/* Versiunea Bianca Veres
+
+h1 {
+  font-size: 24px;
+  color: black;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+img { float: left; }
+
+p {
+  display: table-cell;
+  padding-left: 15px;
+}
+
+a { color: green; }
+
+a:hover { color: red; }
+
+
+*/

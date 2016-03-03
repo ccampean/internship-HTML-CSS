@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Evaluations</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <!-- never do this -->
+  <style type="text/css">
+    body { margin: 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="panel panel-default">
+      <div class="panel-heading">HTML &amp; CSS Training Evaluations</div>
+      <div class="panel-body">
+        <ul id="results" class="list-group"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="evals.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <script id="template" type="template/text">
+    <li class="list-group-item">
+      <h3>
+        <a href="<%= repo %>" title="click to open the repo of: <%= name %>" target="_blank"><%= name %></a>
+      </h3>
+      <h4 class="text-success">Good:</h4>
+      <p class="labels good">
+        <% _.each(review.good, function(entry) { %>
+          <span class="label label-success"><%= entry %></span>
+        <% }); %>
+      </p>
+      <h4 class="text-danger">Bad:</h4>
+      <p class="labels bad">
+        <% _.each(review.bad, function(entry) { %>
+          <span class="label label-danger"><%= entry %></span>
+        <% }); %>
+      </p>
+      <h4 class="text-warning">Recommendation:</h4>
+      <ul class="list-group">
+        <% _.each(review.recommendation, function(entry) { %>
+          <li class="list-group-item">
+            <a href="<%= entry.url %>" target="_blank"><%= entry.message %></a>
+          </li>
+        <% }); %>
+      </ul>
+
+    </li>
+  </script>
+
+  <!-- never do this -->
+  <script type="text/javascript">
+    var $holder = $('#results'),
+      tmpl = _.template($('#template').text()),
+      allLi = [];
+
+    for(var i=0; i<all.length; i++) {
+      allLi.push(tmpl(all[i]));
+    }
+
+    $holder.append(allLi);
+  </script>
+</body>
+</html>

@@ -94,7 +94,6 @@ body {
 }
 
 input {
-    height: inherit;
     background: #f8f8f8;
     border: none;
 }
@@ -105,23 +104,20 @@ select {
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    #dededf;
-    border: none;
+    padding: 15px 0;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
     color:    #dededf;
     opacity:  1;
-    border: none;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
     color:    #dededf;
     opacity:  1;
-    border: none;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
     color:    #dededf;
-    border: none;
 }
 :placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
     color:    #dededf;
-    border: none;
+    padding: 15px 0;
 }

@@ -19,25 +19,35 @@
             </div>
         </div>
         <div class="row row2">
-            <div class="col-lg-6">
-                <a href="">Payment details</a>
+            <div class="col-lg-6 selected">
+                <div>
+                    <a href="">Payment details</a>
+                </div>
             </div>
             <div class="col-lg-6">
-                <a href="">Billing info</a>
+                <div>
+                    <a href="">Billing info</a>
+                </div>
             </div>
         </div>
         <div class="row row3">
             <div class="col-lg-6">
-                <input type="text" name="firstname" placeholder="First name" class="row3-info">
+                <div>
+                    <input type="text" name="firstname" placeholder="First name" class="row3-info">
+                </div>
             </div>
             <div class="col-lg-1">
-                <select class="">
-                    <option>M</option>
-                    <option>F</option>
-                </select>
+                <div>
+                    <select class="">
+                        <option>M</option>
+                        <option>F</option>
+                    </select>
+                </div>
             </div>
             <div class="col-lg-5">
-                <input type="text" name="lastname" placeholder="Last name" class="row3-info">
+                <div>
+                    <input type="text" name="lastname" placeholder="Last name" class="row3-last-name">
+                </div>
             </div>
         </div>
         <div class="row row4">
@@ -52,39 +62,41 @@
         </div>
         <div class="row row6">
             <div class="col-lg-6">
-                <p>&#36;50.00</p>
+                <div>
+                    <p>&#36;50.00</p>
+                </div>
             </div>
             <div class="col-lg-6">
-                <div class="row">
-                    <div class="col-lg-4">
+                <div class="row row6-1">
+                    <div class="col-lg-4 dollars-option">
                         <a href="">&#36;1</a>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 dollars-option">
                         <a href="">&#36;5</a>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 dollars-option">
                         <a href="">&#36;10</a>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4">
+                <div class="row row6-2">
+                    <div class="col-lg-4 dollars-option">
                         <a href="">&#36;20</a>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 dollars-option">
                         <a href="">&#36;50</a>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 dollars-option">
                         <a href="">&#36;100</a>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4">
+                <div class="row row6-3">
+                    <div class="col-lg-4 dollars-option">
                         <a href="">&#36;500</a>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 dollars-option">
                         <a href="">&#36;1000</a>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 dollars-option">
                         <a href="">&#8226;&#8226;&#8226;</a>
                     </div>
                 </div>
@@ -92,7 +104,10 @@
         </div>
         <div class="row row7">
             <div class="col-lg-12">
-                <input type="checkbox" name="check" value="storeInfo" checked>
+                <div class="choose">
+                    <input type="checkbox" value="None" id="choose" name="check" checked>
+                    <label for="choose"></label>
+                </div>
                 <p>Remember me? <a href=""><span class="glyphicon glyphicon-info-sign"></span></a></p>
                 <input type="submit" value="Pay now">
             </div>
